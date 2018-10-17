@@ -1,4 +1,4 @@
-package com.migu.aogs.manager.util;
+package com.xj.util;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;

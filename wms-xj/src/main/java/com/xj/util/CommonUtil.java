@@ -1,4 +1,4 @@
-package com.migu.aogs.manager.util;
+package com.xj.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,5 +24,16 @@ public class CommonUtil {
             logger.error("e", e);
         }
         return null;
+    }
+
+    /**
+     * 设置json型的输出流
+     * @param response
+     */
+    protected void basicJsonResponse(HttpServletResponse response) {
+        response.setContentType("application/json;charset=UTF-8");
+        response.setCharacterEncoding("utf-8");
+        response.setHeader("Charset", "utf-8");
+        response.setHeader("Cache-Control", "no-cache");
     }
 }
