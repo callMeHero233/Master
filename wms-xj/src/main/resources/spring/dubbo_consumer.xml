@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                           http://code.alibabatech.com/schema/dubbo
+                           http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!-- 接收方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="wms_Xj_Consumers"  />
+
+    <!--代替dubbo:reference反射接收服务-->
+    <dubbo:annotation package="com.xj" />
+
+    <!-- 使用multicast广播注册中心发现服务地址 -->
+    <!--  <dubbo:registry address="multicast://224.5.6.7:1234" /> -->
+
+    <!-- 使用zookeeper注册中心发现服务地址 -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"  check="false"/>
+
+    <!-- 接收服务接口 -->
+    <!--<dubbo:reference id="publicRegisterService" interface="com.wpsoft.resmaster.dubbo.api.PublicRegisterService"/>-->
+
+</beans>

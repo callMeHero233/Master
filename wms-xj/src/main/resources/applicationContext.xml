@@ -10,13 +10,8 @@
                         http://www.springframework.org/schema/mvc
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 
-
-    <mvc:annotation-driven/>
-    <!--<context:component-scan base-package="" />-->
-
     <import resource="classpath*:spring/spring-mybatis.xml" />
-    <import resource="classpath:spring/spring-redis.xml" />
-    <import resource="classpath:spring/spring-shiro.xml" />
-    <import resource="classpath:spring/spring-mvc.xml" />
+    <!--<import resource="classpath:spring/spring-redis.xml" />-->
+    <!--<import resource="classpath:spring/spring-shiro.xml" />-->
 
 </beans>

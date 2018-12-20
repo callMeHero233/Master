@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wpsoft.resmaster.core.dao.DemoDao">
+    <resultMap id="demo" type="com.wpsoft.resmaster.core.domain.Demo">
+        <result property="id" column="ID" />
+        <result property="name" column="NAME" />
+        <result property="createTime" column="CREATE_TIME" />
+        <result property="modTime" column="MOD_TIME" />
+        <result property="delStatus" column="DEL_STATUS" />
+    </resultMap>
+
+    <select id="queryDemoList" resultMap="demo">
+        select * from demo
+    </select>
+</mapper>

@@ -11,5 +11,12 @@
 
     <artifactId>wms-xj</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.wx</groupId>
+            <artifactId>wms-wp</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
