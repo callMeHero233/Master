@@ -13,7 +13,7 @@
     <import resource="applicationContext_source.xml"/>
 
     <!--引入服务提供方文件-->
-    <import resource="dubbo_provider.xml"/>
+    <import resource="../dubbo/dubbo_provider.xml"/>
 
     <bean id = "txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"></property>
