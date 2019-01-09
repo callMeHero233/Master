@@ -31,13 +31,7 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public List<Demo> queryDemoList() {
-        List<Demo>  list = null;
-        try{
-            list = demoDao.queryDemoList();
-        }catch (Exception e){
-            logger.info(e.toString());
-            e.printStackTrace();
-        }
+        List<Demo> list = demoDao.queryDemoList();
         return list;
     }
 }

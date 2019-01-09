@@ -1,0 +1,10 @@
+#errBody, #errFoot{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+#errFoot a{
+    margin-left: 10px;
+}
