@@ -9,9 +9,9 @@
 <head>
     <base href="<%=basePath%>" />
     <link rel="stylesheet" type="text/css" href="common/static/css/exceptionErr.css"/>
-    <link rel="stylesheet" type="text/css" href="common/plugins/layer/css/modules/layer/default/layer.css"/>
+    <link rel="stylesheet" type="text/css" href="common/plugins/layui/css/modules/layer/default/layer.css"/>
     <script type="text/javascript" src="common/plugins/jquery/jquery-1.8.3.js"></script>
-    <script type="text/javascript" src="common/plugins/layer/lay/modules/layer.js"></script>
+    <script type="text/javascript" src="common/plugins/layui/lay/modules/layer.js"></script>
     <script type="text/javascript" src="common/static/js/exceptionErr.js">
         var errCode = '${errCode}';
         var errMsg = '${errMsg}';
